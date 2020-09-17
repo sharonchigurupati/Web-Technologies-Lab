@@ -1,0 +1,47 @@
+@CHARSET "ISO-8859-1";
+.block{
+	text-align: center;
+	color: white;
+	
+}
+.b1{
+	padding-top: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+.b2{
+	font-family: 'Muli', sans-serif;
+}
+.back{
+	background-color:#5246C4; 
+	
+}
+.survey{
+	background-color: #000066;
+	margin:auto;
+	width:500px;
+	color: white;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+.border{
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.textarea{
+	width: 445px;
+    height: 90px;
+}
+.submit{
+	width: 90%;
+    margin-top:30px;
+    margin-bottom:30px;
+    border: none;
+    background-color:#21D740;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
