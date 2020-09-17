@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>function validateform(){  
+     var name=document.myform.name.value;  
+     var password=document.myform.password.value; 
+     var confpassword =document.myform.confpassword.value;
+     var email = document.myform.email.value;
+
+
+      if (name==null || name==""){  
+    	    alert("Name can't be blank");  
+    	     return false;  
+    	} 
+     else if(password==null || password==""){
+    		alert("Please enter password");
+    		return false;
+    	}
+     else if(password.length<6){  
+   	  alert("Password must be at least 6 characters long.");  
+   	  return false;  
+   	  } 
+   else if(confpassword==null || confpassword==""){
+   	alert("Confirm Password should not be empty");
+   	return false;
+   }
+   else if(confpassword != password){
+   	alert("Confirm Password and Password should be same");
+   	return false;
+   }
+   else if(email == null || email ==""){
+   	alert("Please enter Email");
+   	return false;
+   }
+}  
+
+  </script>
+</head>
+<body>
+<body bgcolor="#3366ff">
+	
+	<center><strong><h1> E-BOOKS </h1></strong></center>
+<form  name="myform" method="post" action="list.html" onsubmit = "return validateform()">
+<right>
+<table align="center">
+<tr>
+<td><h4>name</td>
+<td><input type="text" name = "name" ></td>
+<tr>
+<tr>
+<td><h4>password</td>
+<td><input type="password" name = "password"></td>
+</tr>
+<tr>
+<td><h4>confirm password</td>
+<td><input type="password" name = "confpassword"></td>
+</tr>
+<tr>
+<td><h4>Email</h4></td>
+<td><input type="text" placeholder="Enter Email Id" name="email" ></td>
+</tr>
+<tr>
+<option>
+<td><h4>male &nbsp;&nbsp;
+
+<input type="radio" name="sex" id="male"></td>
+<td><h4>female &nbsp; &nbsp;
+<input type="radio" name="sex" id="female" ></td>
+</option>
+</tr>
+<tr>
+<td>Address</td>
+<td><textarea name="address" rows=5 cols=19>
+</textarea>
+</td>
+<tr>
+<td>
+<input type="submit" value="submit" ></td>
+<td>
+<input type="reset" value="reset"></td>
+</tr>
+</form>
+
+
+
+</body>
+</html>

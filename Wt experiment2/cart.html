@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+  <script>function validateform(){  
+     var name=document.myform.name.value;  
+      
+  
+if (name==null || name==""){  
+  alert("Quantity can't be blank");  
+  return false;  
+} 
+
+}  
+  </script>
+</head>
+<body>
+<body bgcolor="#ffffb3">
+<center><h1>
+Shopping Cart</h1></center>
+<br><br><br><br><br>
+ <form action="Payment.html" method ="post" name ="myform" onsubmit="return validateform()" >
+<table align="center">
+<tr>
+<td>Text Books</td>
+<td>
+<select >
+<optgroup label="select the book">
+<option value="PPS(c)">PPS(c)
+<option value="C++">C++
+<option value="JAVA">Java
+<option value="Oracle">Oracle
+<option value="Ms SQL Server">Ms SQL Server
+<option value="MySql">MySql
+<option value="DB2">DB2
+<option value="MongoDB">MongoDB
+<option value="Web technologies">Web technologies
+<option value="Python">Python
+
+
+</optgroup>
+</select>
+</td></tr>
+<tr>
+<td>
+Quantity</td>
+<td>
+<input type="text" id="q" name = "name">
+</td></tr>
+<tr>
+<td></td>
+<td>
+<form method=post action="payment.html">
+<input type="submit" value=ok />
+</form>
+</td></tr>
+</table>
+<center>
+<pre>Cost of one book is"300" + shipping "150"</pre>
+</center>
+
+</body>
+</html>
